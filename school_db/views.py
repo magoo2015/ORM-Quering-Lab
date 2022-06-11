@@ -351,7 +351,8 @@ LIMIT 21
 def problem_seven(request):
 
     # Make sure to set this equal to the primary key of the row you just created!
-    student_id = 11
+    student_id = 12 # Ran the previous problem twice.  So I'm deleting 12 here.
+    Student.objects.filter(pk=student_id).delete()
 
 
     try:
